@@ -1,0 +1,1344 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Libre+Caslon+Text:regular,italic,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.mkd-container {
+    width: 89%;
+    margin: 0 auto;
+}
+.margin-escape {
+    margin: 0;
+}
+#hero {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#hero video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+header {
+    padding: 0 80px;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    /* background: #09153B; */
+}
+.sticky-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #09153B;
+    z-index: 2;
+    width: 100%;
+    transition: 0.4s;
+}
+.sticky-head .mkd-navbar ul li::after {
+    background: #fff;
+}
+
+.alt-logo {
+    display: none;
+    transition: 0.3s;
+}
+.show-logo {
+    display: block;
+}
+.hide-logo {
+    display: none;
+}
+
+.mkd-navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.mkd-navbar ul li {
+    margin-right: 16px;
+    position: relative;
+}
+.mkd-navbar ul li::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #091530;
+    left: 1px;
+    bottom: -5px;
+    transition: 0.4s;
+}
+.mkd-navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+.mkd-navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.solution-dropdown .dropdown-menu, .resource-dropdown .dropdown-menu {
+    background: #09153B;
+    padding: 0;
+}
+.solution-dropdown  {
+    display: flex;
+    align-items: center;
+}
+.solution-dropdown .drop-icon, 
+.resource-dropdown .drop-icon {
+    margin-left: 3px;
+    transition: 0.4s;
+    
+}
+.sol-drop-btn[aria-expanded="true"] .drop-icon, 
+.res-drop-btn[aria-expanded="true"] .drop-icon {
+    transform: rotate(180deg);
+}
+
+
+
+.menu-toggle {
+    display: none;
+}
+.menu-toggle i {
+    color: #fff;
+    font-size: 38px;
+}
+.hero-content-section {
+    display: flex;
+    height: 73vh;
+    align-items: center;
+}
+.hero-content h3 {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Libre Caslon Text", sans-serif;
+}
+.hero-content .hero-content-info {
+    font-size: 18px;
+    color: #fff;
+    margin: 16px 0;
+    font-weight: normal;
+}
+
+.hero-content .explore-btn {
+    background: #fff;
+    border-radius: 0;
+    font-size: 15px;
+    color: #09153B;
+    padding: 8px 16px;
+}
+
+.explore-btn img {
+    margin-left: 8px;
+    transition: 0.4s;
+}
+.explore-btn:hover img {
+    transform: translateX(10px);
+    transition: 0.4s;
+}
+
+
+.hero-section-blank {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+}
+
+#cookie {
+    position: fixed;
+    bottom: 0;
+    z-index: 11111;
+    width: 100%;
+}
+.bgk-cookies {
+    padding: 0 15px;
+    display: flex;
+    height: 60px;
+    background:  #09153B;
+    justify-content: space-between;
+    align-items: center;
+}
+.bgk-cookies p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+}
+.bgk-cookies .cookies-btn {
+    background: #42C9C0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #09153B;
+    border-radius: 0;
+    
+}
+
+/* Mobile navigation */
+#mobile-nav {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 99999999999999999;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    right: -110%;
+    transition: 0.5s;
+    
+}
+#mobile-nav.active {
+    right: 0;
+}
+.mobile-nav-wrapper {
+    position: absolute;
+    background: #09153B;
+    height: 100%;
+    width: 80%;
+    padding-left: 14px;
+    right: 0;
+}
+.mobile-nav-wrapper .close-btn {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 40px;
+    
+
+}
+.mobile-side-nav-menu  {
+    margin-top: 30px;
+}
+.mobile-side-nav-menu .mobile-nav-menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-side-nav-menu ul li {
+    margin-bottom: 20px;
+}
+.mobile-side-nav-menu ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.mobile-nav-solution ul {
+    display: none;
+    transition: 0.3s;
+}
+.mobile-nav-solution ul.show-menu {
+    display: block;
+    transition: 0.3s;
+}
+.mobile-nav-resource ul {
+    display: none;
+    transition: 0.3s;
+}
+.mobile-nav-resource ul.show-menu {
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-nav-prom {
+    position: relative;
+    background: #fff;
+    height: 120px;
+    top: 20%;
+}
+.mobile-nav-prom .from-insight {
+    left: 20px;
+}
+.mobile-nav-prom .from-insight span {
+    color: #091530;
+    font-size: 15px;
+}
+.mobile-nav-prom .from-insight h3 {
+    font-size: 16px;
+    color: #09153B;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.mobile-nav-prom .from-insight h3 a {
+    color: #4850BE;
+    text-decoration: none;
+}
+.mobile-nav-solution .drop-icon, 
+.mobile-nav-resource .drop-icon {
+    margin-left: 4px;
+    transition: 0.3s;
+}
+
+.rotate-drop {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+/* Solution div */
+
+.our-solution-infoDiv {
+    display: flex;
+    align-items: center;
+}
+
+.our-solution-info h3 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Libre Caslon Text', sans-serif;
+}
+.our-solution-info p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    text-align: justify;
+    padding-right: 150px;
+}
+
+.solution-cards {
+    height: 300px;
+    background: #4850BE;
+    color: #fff;
+    padding: 10px 26px 8px 10px;
+    position: relative; 
+}  
+.solution-cards:hover {
+    background: #09153B;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.solution-cards:hover .solution-card-title h3::after {
+    width: 95%;
+    transition: 0.5s;
+}
+.solution-card-title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 0;
+    position: relative;
+}
+.solution-card-title h3::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+}
+.solution-card-body p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    padding-right: 16px;
+    
+}
+
+.arrow-more {
+    position: absolute;
+    color: #fff;
+    right: 20px;
+    bottom: 20px;
+    font-size: 18px;
+}
+.arrow-more:hover {
+    color: #fff;
+}
+
+/* Email Banner */
+.email-banner {
+    height: 280px;
+    background: #09153B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-right: 95px;
+}
+.banner-img img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+.banner-form-success{
+    text-align: center;
+    transition: 1s;
+}
+.banner-form-success .success-icon {
+    color: #42C9C0;
+    font-size: 42px;
+    background: #fff;
+    border-radius: 100%;
+}
+.banner-form-success h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.banner-form-success p {
+    color: #fff;
+}
+.banner-form-success .chk-insight {
+    text-decoration: none;
+    font-weight: 600;
+    color: #42C9C0;
+}
+
+.from-insight {
+    position: absolute;
+    top: 0;
+}
+.from-insight span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.email-banner-info h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Libre Caslon Text', sans-serif;
+    color: #fff;
+}
+.email-banner-info small {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+}
+.banner-email-form input {
+    display: block;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    height: 34px;
+}
+.banner-email-form input::placeholder {
+    text-align: center;
+}
+.banner-email-form .email-banner-btn {
+    background: #42C9C0;
+    color: #000;
+    font-size: 14px;
+    border-radius: 0;
+    padding: 5px;
+}
+.email-banner-btn:hover {
+    background: #fff;
+    transition: 0.3s;
+}
+.email-banner-btn img {
+    margin-left: 4px;
+    transition: 0.4s;
+}
+.email-banner-btn:hover img {
+    transform: translateX(5px);
+    transition: 0.4s;
+}
+#clients {
+    padding: 100px 0;
+}
+.client-head {
+    margin-bottom: 50px;
+}
+.clients-brand-1 {
+    position: relative;
+}
+.client-head h3 {
+    color: #09153B;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Libre Caslon Text', sans-serif ;
+}
+.clients-brand-1 h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #09153B;
+    margin: 15px 0;
+
+}
+.clients-brand-1 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #09153B;
+}
+
+.clients-brand-1::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #09153B;
+}
+
+.client-brand-container {
+    padding-left: 30px;
+}
+
+
+#impact, 
+#fraud-benefits {
+    background: url("../images/Gradients\ 2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    padding: 100px 0;
+}
+.impact-items1 p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    
+    font-family: 'Libre Caslon Text', sans-serif ;
+
+}
+.impact-items {
+    color: #fff;
+    position: relative;
+}
+.impact-items::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 90%;
+    background: #fff;
+    bottom: -20px;
+    left: 0;
+}
+.impact-items h3 {
+    font-family: 'Libre Caslon Text', sans-serif ;
+    font-size: 45px;
+    font-weight: 700;
+}
+.impact-items small {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#reviews {
+    height: 60vh;
+   
+    
+}
+.review-carousel {
+    position: relative;
+    margin-top: 90px;
+}
+.review-carousel .carousel-indicators {
+    position: absolute;
+    bottom: 0px;
+}
+.review-carousel .carousel-indicators li {
+    background: #09153B;
+    height: 2px;
+    border: 0;
+}
+.review-item {
+   width: 60%;
+   margin-left: 23%;
+   padding: 50px;
+   position: relative;
+}
+.review-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.review-item small {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 50px;
+}
+.text-review-primary {
+    color: #4850BE;
+}
+.comma-icon {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+/* lets talk section */
+#lets-talk {
+    height: 60vh;
+    background: url("../images/Gradient\ 1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lets-talk-btn {
+    background: #fff;
+    border-radius: 0;
+    font-size: 15px;
+    color: #09153B;
+    font-weight: 700;
+}
+.lets-talk-content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Libre Caslon Text', sans-serif;
+    margin-bottom: 40px;
+}
+.lets-talk-btn img {
+    margin-left: 10px;
+    transition: 0.4s;
+}
+.lets-talk-btn:hover img{
+    transform: translateX(10px);
+    transition: 0.4s;
+}
+
+/* footer section */
+#footer {
+    height: fit-content;
+    background: #09153B;
+    padding: 100px 0;
+
+}
+
+.footer-links ul {
+    list-style: none;
+}
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer-links .footer-links-2 li {
+    margin-bottom: 16px;
+    
+}
+.footer-social-icons {
+    list-style: none;
+}
+.footer-social-icons li a {
+    color: #fff;
+    font-size: 30px;
+}
+/* copyright */
+#footer-copyright {
+    background: #09153B;
+    border-top: 1px solid rgba(255, 255, 255, 0.54);
+}
+.copyright-link-contents {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.copyright-content {
+    font-size: 15px;
+    color: #fff;
+}
+.copyright-links ul {
+    list-style: none;
+    display: flex;
+}
+.copyright-links ul li {
+    margin-right: 16px;
+}
+.copyright-links ul li a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.scroll-top-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 32px;
+    right: -20px;
+    bottom: 42px;
+}
+.scroll-top-btn i:hover {
+    background: #fff;
+    color: #09153B;
+    transition: 0.3s;
+}
+.scroll-top-btn i {
+    border: 1px solid #fff;
+    padding: 5px 14px;
+    background: #091530;
+}
+
+
+/* About Page */
+#about-hero .mkd-navbar .mkd-nav-ul li a, 
+#fraud-hero .mkd-navbar .mkd-nav-ul li a {
+  color: #09153B;
+}
+
+#about-hero .sticky-head .mkd-navbar .mkd-nav-ul li a, 
+#fraud-hero .sticky-head .mkd-navbar .mkd-nav-ul li a {
+    color: #fff;
+  }
+#about-hero .mkd-navbar .mkd-nav-ul .solution-dropdown .dropdown-item,
+#fraud-hero .mkd-navbar .mkd-nav-ul .solution-dropdown .dropdown-item {
+    color: #fff;
+}
+
+#about-hero .mkd-navbar .mkd-nav-ul .solution-dropdown .dropdown-item:hover,
+#fraud-hero .mkd-navbar .mkd-nav-ul .solution-dropdown .dropdown-item:hover {
+    color: #09153B;
+}
+#about-hero .mkd-navbar .mkd-nav-ul .resource-dropdown .dropdown-item:hover,
+#fraud-hero .mkd-navbar .mkd-nav-ul .resource-dropdown .dropdown-item:hover {
+    color: #09153B;
+}
+#about-hero .mkd-navbar .mkd-nav-ul .resource-dropdown .dropdown-item, 
+#fraud-hero .mkd-navbar .mkd-nav-ul .resource-dropdown .dropdown-item {
+    color: #fff;
+}
+
+#about-hero .menu-toggle i, 
+#fraud-hero .menu-toggle i {
+    color: #09153B;
+}
+#about-hero .menu-toggle i.color-white, 
+#fraud-hero .menu-toggle i.color-white {
+    color: #fff;
+}
+
+.aboutus-content-section {
+    display: flex;
+    height: 80vh;
+    align-items: flex-end;
+}
+.aboutus-content h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #09153B;
+    margin-bottom: 24px;
+}
+.aboutus-content h3 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #09153B;
+    font-family: "Libre Caslon Text", sans-serif;
+}
+
+#aboutus-story {
+    margin-top: 100px;
+}
+.about-story-content-1 p {
+    font-size: 18px;
+}
+.about-story-content-2 p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    padding-right: 40%;
+}
+
+
+.about-story-content-2 {
+    margin-top: 100px;
+}
+.about-story-content-2 h3 {
+    font-size: 15px ;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+#about-leadership {
+    margin-top: 200px;
+}
+.leadership-head h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Libre Caslon Text", sans-serif;
+    color: #09153B;
+}
+.leaders {
+    margin-bottom: 40px;
+}
+
+.leaders .card .card-body {
+    background: #4850BE;
+    position: relative;
+    height: 138px;
+}
+
+.leaders .card:hover .card-body {
+    background: #09153B;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.leaders .card:hover .card-body .card-title::after {
+    width: 70%;
+    transition: 0.4s;
+}
+
+.leaders .card .card-body .card-title::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 0%;
+    height: 4px;
+    left: 0;
+    bottom: -5px;
+}
+
+.leaders .card-img, .card-img-top {
+    border-radius: 0;
+}
+.leaders .card {
+    border-radius: 0;
+}
+
+.leaders .card .card-body .card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+.leaders .card .card-body .card-text {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+.leaders .card .card-body .card-arrow {
+    position: absolute;
+    right: 15px;
+    font-size: 22px;
+    color: #fff;
+    bottom: 10px;
+}
+
+#about-investors {
+    margin-top: 100px;
+}
+.investors-section {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+}
+.investor-head h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family:"Libre Caslon Text", sans-serif;
+}
+
+.investor-brand-1 {
+   padding: 20px;
+} 
+
+#about-challenge {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.challenge-img {
+    padding-left: 0;
+}
+.challenge-img img {
+    width: 100;
+    object-fit: cover;
+}
+.challenge-joinus h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #09153B;
+}
+.challenge-joinus h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #09153B;
+    line-height: 50px;
+    font-family: 'Libre Caslon Text', sans-serif;
+    margin-bottom: 40px;
+}
+.challenge-joinus .join-us-btn {
+    background: #4850BE;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 0;
+    font-weight: 700;
+}
+
+.join-us-btn > img {
+    transform: translateX(4px); 
+    transition: all 0.4s;
+}
+.join-us-btn:hover {
+    background: #091530;
+}
+.join-us-btn:hover > img{
+    transform: translateX(10px);
+    transition: 0.4s;
+}
+
+.about-footer-copyright .scroll-top-btn {
+    display: none;
+}
+.mobile-invest-swipe {
+    display: none;
+}
+
+.investor-carousel {
+    position: relative;
+}
+.investor-carousel .carousel-indicators {
+    position: absolute;
+    bottom: -50px;
+}
+.investor-carousel .carousel-indicators li {
+    background-color: #09153B;
+}
+
+/* Fraud Prevention Page */
+.fraud-content-section {
+    margin-top: 50px;
+    padding-left: 68px;
+}
+.fraud-prev-section {
+    display: flex;
+    align-items: center;
+}
+.fraud-prev-img{
+    padding-right: 0;
+}
+.fraud-prev-img img {
+    float: right;
+}
+.fraud-prev h5 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #09153B;
+    margin-bottom: 25px;
+}
+.fraud-prev h3 {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #09153B;
+    font-family: "Libre Caslon Text", sans-serif;
+}
+.fraud-prev .fraud-prev-btn {
+    background: #4850BE;
+    color: #fff;
+    border-radius: 0;
+    font-size: 15px;
+}
+.fraud-prev .fraud-prev-btn img {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: 0.4s;
+}
+.fraud-prev-btn:hover {
+    background: #091530;
+    transition: all 0.3s;
+}
+.fraud-prev-btn:hover img {
+    transform: translateX(10px);
+
+}
+#challenge-solution {
+    margin: 100px 0;
+}
+.fraud-challenge h3, .fraud-solution h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #09153B;
+    margin-bottom: 30px;
+}
+.fraud-challenge p, .fraud-solution p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #09153B;
+    line-height: 30px;
+    margin: 0;
+    padding-right: 40px;
+}
+
+.benefits-1, 
+.benefits-2{
+    color: #fff;
+}
+.benefit-head h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Libre Caslon Text", sans-serif;
+    margin-bottom: 40px;
+}
+
+.benefits-1 li, 
+.benefits-2 li {
+    list-style-type: square;
+    margin-bottom: 40px;
+    text-align: justify;
+    
+}
+.benefits-1 li p, 
+.benefits-2 li p {
+    margin-top: -30px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.benefits-1 li::marker, 
+.benefits-2 li::marker {
+    font-size: 25px;
+    
+}
+
+.benefits-2 {
+    padding-right: 40px;
+}
+.benefits-1 {
+    padding-right: 70px;
+}
+#prevention-process {
+    height: fit-content;
+    background: #4850BE;
+    padding: 80px 0;
+}
+
+.prevent-head h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Libre Caslon Text", sans-serif;
+    line-height: 50px;
+}
+
+.prevent-process-1 {
+    padding-left: 60px;
+    position: relative;
+}
+.prevent-process-1 h3 {
+    font-size: 20px;
+    font-weight: 700;
+   position: relative;
+    color: #fff;
+
+}
+.prevent-process-1:nth-child(2)::before {
+    position: absolute;
+    content: url("../images/Process\ arrow.png");
+    right: 0;
+    top: 0;
+    
+}
+.prevent-process-1:nth-child(3)::before {
+    position: absolute;
+    content: url("../images/Process\ arrow.png");
+    right: 0;
+    top: 0;
+    
+}
+.prevent-process-1 h3::after {
+    position: absolute;
+    content: "";
+    width: 85%;
+    height: 4px;
+    background: #fff;
+    left: 0;
+    bottom: -10px;
+}
+.prevent-process-1 p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 20px;
+    line-height: 24px;
+    padding-right: 30px;
+}
+.af-edge .client-head h3 {
+    font-size: 30px;
+}
+
+#caseStudy {
+    margin-top: 40px;
+    padding-left: 68px;
+    padding-bottom: 60px;
+}
+.caseStudy-head {
+    padding-right: 40px;
+}
+.caseStudy-head h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Libre Caslon Text", sans-serif;
+    color: #09153B;
+    margin-bottom: 40px;
+}
+.caseStudy-content {
+    margin-bottom: 20px;
+}
+.caseStudy-content h5 {
+    font-size: 14px;
+    color: #09153B;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.caseStudy-content p {
+    font-size: 14px;
+    color: #09153B;
+    font-weight: 600;
+    line-height: 30px;
+}
+.mobile-caseStudy-content {
+    display: none;
+    margin-top: 30px;
+}
+.prev-carousel-section {
+    display: none;
+    position: relative;
+    height: 500px;
+}
+
+.prev-process-carousel {
+    height: 350px;
+}
+.prev-process-carousel .carousel-indicators {
+    position: absolute;
+    bottom: 40px;
+}
+
+@media screen and (max-width: 560px) {
+    .copyright-link-contents{
+        text-align: center;
+    }
+    header {
+        padding: 0 20px;
+    }
+    .hero-content h3 {
+        font-size: 30px;
+    }
+    .main-logo, .alt-logo {
+        width: 75%;
+    }
+    .aboutus-content h3,
+    .challenge-joinus h3, 
+    .fraud-prev h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .fraud-content-section, 
+    .fraud-prev-img {
+        padding-left: 0;
+    }
+    .fraud-prev .fraud-prev-btn {
+        width: 100%;
+    }
+    .fraud-prev {
+        padding-left: 10px;
+    }
+    .fraud-solution p, 
+    .fraud-challenge p {
+        padding-right: 0;
+    }
+    .fraud-prev-img img  {
+        width: 100%;
+        object-fit: cover;
+    }
+    .fraud-solution, .fraud-challenge {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #caseStudy {
+        padding-left: 0;
+    }
+    .caseStudy-head, .caseStudy-img {
+        padding: 0;
+    }
+    .caseStudy-head h3 {
+        padding-left: 14px;
+    }
+    .prevention-process-lg {
+        display: none;
+    }
+    .prev-carousel-section {
+        display: block;
+    }
+    .prevent-head h3  {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    #prevention-process {
+        height: 500px;
+    }
+    .prevent-process-1:nth-child(2)::before {
+        left: 50%;
+    }
+    
+
+    
+}
+
+@media screen and (max-width: 982px) {
+    .bgk-cookies {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .bgk-cookies p {
+        margin-bottom: 18px;
+    }
+    .our-solution-info p {
+        padding-right: 0;
+    }
+    .solution-cardDiv {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .our-solution-items {
+        margin-top: 40px;
+    }
+    .mobile-invest-swipe {
+        display: block;
+    }
+
+    .email-banner {
+        flex-direction: column;
+        padding-right: 0px;
+        height: fit-content;
+        margin: 0 58px;
+        padding-bottom: 20px;
+    }
+    .banner-img  {
+        display: none;
+    }
+    .email-banner-info {
+        margin: 50px 0 40px 0;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .banner-email-form {
+        width: 100%;
+        padding-left: 10px;
+    }
+    .clients-brand-1 {
+        margin-bottom: 40px;
+    }
+    .clients-brand-1::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #09153B;
+        bottom: -10px;
+    }
+    .client-brand-container {
+        padding-left: 0;
+    }
+    #impact  {
+        height: fit-content;
+    }
+    .impact-items {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .impact-items1 {
+        padding: 0;
+    }
+    .footer-links {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .footer-social-icons {
+        padding-left: 0;
+    }
+    .footer-links .footer-links-2 {
+        padding-left: 0;
+    }
+    .review-carousel {
+        margin-top: 0;
+        height: fit-content;
+    }
+    #reviews {
+        height: fit-content;
+    }
+    .review-item {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .mkd-navbar {
+        display: none;
+    }
+    .leadership-head h3  {
+        margin-left: 16px;
+        margin-bottom: 10px;
+    }
+    
+
+    .about-story-content-2 p {
+        padding-right: 0;
+    }
+    .investors-section {
+        flex-direction: column;
+    }
+    .investors-brand {
+        display: none;
+    }
+    .aboutus-content h3 {
+        line-height: 36px;
+    }
+    .challenge-joinus {
+        margin-top: 20px;
+    }
+    .challenge-joinus h3  {
+        line-height: 36px;
+    }
+    .fraud-prev-img {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .fraud-prev-img img {
+        float: none;
+    }
+    .fraud-solution {
+        margin-top: 40px;
+    }
+    .benefits-2 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .benefits-1 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .mobile-caseStudy-content, .mobile-caseStudy-content .caseStudy-content {
+        display: block;
+    }
+    .caseStudy-content {
+        display: none;
+    }
+    
+    
+}
