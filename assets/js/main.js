@@ -16,6 +16,9 @@ const bannerEmail = document.querySelector(".banner-email-form");
 // const resourceDropLg = document.querySelector('.resource-dropdown');
 const solutionDropIcon = document.querySelector('.mobile-nav-solution .drop-icon');
 const resourceDropIcon = document.querySelector('.mobile-nav-resource .drop-icon');
+const cookieDiv = document.getElementById("cookie");
+const cookieBtn = document.querySelector(".cookies-btn");
+
 
 
 
@@ -47,9 +50,9 @@ function showSuccess() {
     bannerEmail.classList.toggle("d-none");
 }
 
-// function rotateIcon(){
-//     solutionDropIcon.classList.toggle('rotate-drop');
-// }
+function hideCookies(){
+    cookieDiv.classList.toggle('hide-cookie');
+}
 
 
 
@@ -62,7 +65,7 @@ solutionLink.onclick = showDrop;
 resourceLink.onclick = showDropRes;
 whitepaperBtn.onclick = showSuccess;
 // solutionDropLg.onclick = rotateIcon;
-
+cookieBtn.onclick = hideCookies;
 
 // swiper js
 

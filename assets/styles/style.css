@@ -15,6 +15,9 @@ body {
     width: 89%;
     margin: 0 auto;
 }
+
+
+
 .margin-escape {
     margin: 0;
 }
@@ -172,6 +175,10 @@ header {
     z-index: 11111;
     width: 100%;
 }
+#cookie.hide-cookie {
+    opacity: 0;
+    transition: opacity 0.6s;
+}
 .bgk-cookies {
     padding: 0 15px;
     display: flex;
@@ -203,9 +210,10 @@ header {
     top: 0;
     bottom: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     right: -110%;
     transition: 0.5s;
+    
     
 }
 #mobile-nav.active {
@@ -218,14 +226,14 @@ header {
     width: 80%;
     padding-left: 14px;
     right: 0;
+    overflow-y: auto;
 }
 .mobile-nav-wrapper .close-btn {
     color: #fff;
     font-size: 30px;
     position: absolute;
     right: 40px;
-    
-
+    top: 10px;
 }
 .mobile-side-nav-menu  {
     margin-top: 30px;
@@ -273,6 +281,9 @@ header {
 .mobile-nav-prom .from-insight span {
     color: #091530;
     font-size: 15px;
+    position: absolute;
+    top: 18px;
+    margin-left: 5px;
 }
 .mobile-nav-prom .from-insight h3 {
     font-size: 16px;
@@ -294,6 +305,13 @@ header {
     transform: rotate(180deg);
     transition: 0.3s;
 }
+
+@media screen and (max-width: 332px) {
+    .mobile-nav-prom .from-insight h3 {
+        font-size: 13px;
+        padding: 5px 0;
+    }
+}
 /* Solution div */
 
 .our-solution-infoDiv {
@@ -314,6 +332,10 @@ header {
     text-align: justify;
     padding-right: 150px;
 }
+.solution-cardDiv {
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
 .solution-cards {
     height: 300px;
@@ -321,7 +343,8 @@ header {
     color: #fff;
     padding: 10px 26px 8px 10px;
     position: relative; 
-}  
+} 
+ 
 .solution-cards:hover {
     background: #09153B;
     transition: 0.3s;
@@ -363,6 +386,16 @@ header {
 }
 .arrow-more:hover {
     color: #fff;
+}
+
+@media screen and (max-width: 460px) {
+    .mobile-side-nav-menu ul li a {
+        font-size: 14px;
+    }
+    .mobile-side-nav-menu ul li > ul {
+        list-style: none;
+        padding-left: 0;
+    }
 }
 
 /* Email Banner */
@@ -554,12 +587,19 @@ header {
     height: 2px;
     border: 0;
 }
+
 .review-item {
-   width: 60%;
-   margin-left: 23%;
    padding: 50px;
-   position: relative;
+   
 }
+.review-item > div {
+    position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 .review-item h3 {
     font-size: 24px;
     font-weight: 700;
@@ -576,9 +616,24 @@ header {
 }
 .comma-icon {
     position: absolute;
-    top: 20px;
-    left: 0;
+    top: -28px;
+    left: -35px;
 }
+
+@media screen and (max-width: 560px) {
+    .review-item > div  {
+        width: 100%;
+    }
+    .comma-icon {
+        top: -34px;
+     
+    }
+    .review-item h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
 /* lets talk section */
 #lets-talk {
     height: 60vh;
@@ -777,6 +832,8 @@ header {
 }
 .leaders {
     margin-bottom: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .leaders .card .card-body {
@@ -1125,6 +1182,12 @@ header {
     bottom: 40px;
 }
 
+@media screen and (max-width: 412px){
+    .hero-content {
+        margin-top: 80px;
+    }
+}
+
 @media screen and (max-width: 560px) {
     .copyright-link-contents{
         text-align: center;
@@ -1183,9 +1246,12 @@ header {
     }
     .prevent-head h3  {
         font-size: 26px;
-        text-align: center;
         margin-bottom: 20px;
         
+    }
+    #impact {
+        padding: 30px 0;
+
     }
     #prevention-process {
         height: 500px;
@@ -1193,8 +1259,15 @@ header {
     .prevent-process-1:nth-child(2)::before {
         left: 50%;
     }
+    .email-banner-info h3 {
+        font-size: 26px;
+    }
+    .client-head h3, 
+    .our-solution-info h3 {
+        font-size: 26px;
+    }
     
-
+    
     
 }
 
@@ -1225,7 +1298,7 @@ header {
         flex-direction: column;
         padding-right: 0px;
         height: fit-content;
-        margin: 0 58px;
+        margin: 0 32px;
         padding-bottom: 20px;
     }
     .banner-img  {
