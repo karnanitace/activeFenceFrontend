@@ -224,8 +224,11 @@
                 <small>Conspiracy theories</small>
             </div>
             <div class="banner-email-form">
-                <input type="email" placeholder="Your Work email">
-                <button class="btn email-banner-btn">Get the whitepaper <img src="./assets/images/Open Arrow (1).png" alt=""></button>
+                <form id="whitepaperForm">
+                    <input type="email" placeholder="Your Work email" id="workEmail" required>
+                    <button type="submit" value="Get the whitepaper" class="btn email-banner-btn">Get the whitepaper <img src="./assets/images/Open Arrow (1).png" alt=""></button>
+                </form>
+                
             </div>
             <div class="banner-form-success d-none">
                 <p><i class="fas fa-check-circle success-icon"></i></p>
@@ -308,7 +311,7 @@
                 <div class="prevent-head">
                     <h3>Our Process impacts in numbers</h3>
                 </div>
-                <div id="impact-carousel" class="carousel prev-process-carousel slide" data-interval="false" data-ride="carousel">
+                <div id="impact-carousel" class="carousel prev-process-carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active prev-process-item">
                             <div class="impact-items">
