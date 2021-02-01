@@ -9,11 +9,14 @@
 }
 
 body {
+
   font-family: 'Open Sans', sans-serif;
+
 }
 .mkd-container {
   width: 89%;
   margin: 0 auto;
+
 }
 
 .margin-escape {
@@ -75,18 +78,26 @@ header {
 .mkd-navbar ul {
   display: flex;
   list-style: none;
+
   margin-bottom: 0;
+
+
 }
 
 .mkd-navbar ul li:not(.mkd-navbar ul li:nth-last-child(1)) {
   margin-right: 53px;
 }
 .mkd-navbar ul li {
+
+  margin-right: 16px;
+
   position: relative;
 }
 .mkd-navbar ul li::after {
   position: absolute;
+
   content: '';
+
   height: 3px;
   width: 0;
   background: #091530;
@@ -101,6 +112,7 @@ header {
 .mkd-navbar ul li a {
   text-decoration: none;
   color: #fff;
+
 }
 .solution-dropdown .dropdown-menu,
 .resource-dropdown .dropdown-menu {
@@ -138,6 +150,27 @@ header {
   transform: rotate(180deg);
 }
 
+
+.solution-dropdown .dropdown-menu,
+.resource-dropdown .dropdown-menu {
+  background: #09153b;
+  padding: 0;
+}
+.solution-dropdown {
+  display: flex;
+  align-items: center;
+}
+.solution-dropdown .drop-icon,
+.resource-dropdown .drop-icon {
+  margin-left: 3px;
+  transition: 0.4s;
+}
+.sol-drop-btn[aria-expanded="true"] .drop-icon,
+.res-drop-btn[aria-expanded="true"] .drop-icon {
+  transform: rotate(180deg);
+}
+
+
 .menu-toggle {
   display: none;
 }
@@ -155,11 +188,12 @@ header {
   color: #fff;
   font-weight: 700;
 
-  font-family: "Libre Caslon Text", sans-serif;
 
   width: 60%;
   padding-right: 60px;
-  font-family: 'Libre Caslon Text', sans-serif;
+
+
+
 
 }
 .hero-content .hero-content-info {
@@ -167,20 +201,26 @@ header {
   color: #fff;
   margin: 16px 0;
   font-weight: normal;
+
   line-height: 30px;
 }
 .btn > img {
   width: 14px;
   height: 14px;
+
 }
 .hero-content .explore-btn {
   background: #fff;
   border-radius: 0;
   font-size: 15px;
+
   font-weight: 700;
   color: #09153b;
   height: 46px;
   width: 231px;
+
+  color: #09153b;
+
   padding: 8px 16px;
 }
 
@@ -349,6 +389,7 @@ header {
 
 .our-solution-info h3 {
   font-size: 45px;
+
   line-height: 60px;
   font-weight: 700;
 
@@ -363,6 +404,14 @@ header {
 .our-solution-info p {
   font-size: 18px;
   line-height: 30px;
+
+  font-weight: 700;
+  color: #000;
+  font-family: "Libre Caslon Text", sans-serif;
+}
+.our-solution-info p {
+  font-size: 18px;
+
   font-weight: 400;
   margin: 0;
   text-align: justify;
