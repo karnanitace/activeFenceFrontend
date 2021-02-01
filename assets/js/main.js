@@ -28,7 +28,8 @@ const showText = document.querySelectorAll(".show-text");
 const showBtn = document.querySelectorAll(".show-btn");
 const searchBtn  = document.querySelector(".search-btn");
 const searchBox = document.querySelector(".open-search-box");
-
+const scrollToTopBtn= document.getElementById("scrollToTop");
+const rootElement = document.documentElement;
 
 // functions
 function sticky() {
@@ -37,6 +38,7 @@ function sticky() {
   header.classList.toggle("sticky-head", window.scrollY > 0);
   aboutMenuToggle !== (undefined || null) &&
     aboutMenuToggle.classList.toggle("color-white", window.scrollY > 0);
+  scrollToTopBtn !== (undefined || null) && scrollToTopBtn.classList.toggle("show-scroll", window.scrollY > 100);
 }
 
 function toggleNav(e) {
@@ -86,7 +88,13 @@ function openSearchBox() {
 }
 
 
-
+// handle scroll
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
 // event listeners
 window.addEventListener("scroll", sticky);
 menuBtn.onclick = toggleNav;
@@ -108,3 +116,4 @@ showBtn !== (undefined || null) &&
   searchBtn !== (undefined || null) && (searchBtn.onclick = openSearchBox);
 
   
+scrollToTopBtn !== (undefined || null) && (scrollToTopBtn.onclick = scrollToTop);
