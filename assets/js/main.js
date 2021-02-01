@@ -23,15 +23,12 @@ const resourceDropIcon = document.querySelector(
 );
 const cookieDiv = document.getElementById("cookie");
 const cookieBtn = document.querySelector(".cookies-btn");
-<<<<<<< HEAD
 const threeDots = document.querySelectorAll(".three-dots");
 const showText = document.querySelectorAll(".show-text");
 const showBtn = document.querySelectorAll(".show-btn");
 const searchBtn  = document.querySelector(".search-btn");
 const searchBox = document.querySelector(".open-search-box");
 
-=======
->>>>>>> e9fe7889074e854dc122d0c1d719b33baa286a7c
 
 // functions
 function sticky() {
@@ -69,7 +66,6 @@ function hideCookies() {
   cookieDiv.classList.toggle("hide-cookie");
 }
 
-<<<<<<< HEAD
 function showTruncateText() {
   threeDots.forEach((dots) => {
     dots.classList.toggle("d-none");
@@ -91,8 +87,6 @@ function openSearchBox() {
 
 
 
-=======
->>>>>>> e9fe7889074e854dc122d0c1d719b33baa286a7c
 // event listeners
 window.addEventListener("scroll", sticky);
 menuBtn.onclick = toggleNav;
@@ -105,7 +99,6 @@ whitepaperForm !== (undefined || null) &&
 cookieBtn !== (undefined || null) && (cookieBtn.onclick = hideCookies);
 
 // swiper js
-<<<<<<< HEAD
 
 showBtn !== (undefined || null) &&
   showBtn.forEach((btn) => {
@@ -115,5 +108,3 @@ showBtn !== (undefined || null) &&
   searchBtn !== (undefined || null) && (searchBtn.onclick = openSearchBox);
 
   
-=======
->>>>>>> e9fe7889074e854dc122d0c1d719b33baa286a7c
