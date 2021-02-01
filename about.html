@@ -1,368 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
- 
-     <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
     <title>About</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="about-hero" class="hero-section">
-        <header class="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./assets/images/about_logo_active.png" class="main-logo"  alt="ActiveFence">
-                    <img src="./assets/images/footer_logo.png" class="alt-logo"  alt="ActiveFence">
-                </a>
-            </div>
-            <nav class="mkd-navbar">
-                <ul class="mkd-nav-ul">
-                    <li class="solution-dropdown"><a href="" class="sol-drop-btn" role="button"  id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions <i class="fas fa-chevron-down drop-icon"></i></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <a class="dropdown-item" href="#">Harmful content detection</a>
-                            <a class="dropdown-item" href="fraud_prevention.html">Fraud Prevention</a>
-                            <a class="dropdown-item" href="#">Information Operations Mitigation</a>
-                            <a class="dropdown-item" href="#">Public Safety and Security</a>
-                          </div>
-                    </li>
-                    <li class="resource-dropdown"><a href=""  class="res-drop-btn" role="button"  id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources <i class="fas fa-chevron-down drop-icon"></i></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                            <a class="dropdown-item" href="#">Insights reports</a>
-                            <a class="dropdown-item" href="#">ClearView Chrome Extension</a>
-                           
-                          </div>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Contact us</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </header>
-
-        <div class="aboutus-content-section mkd-container">
-            <div class="aboutus-content">
-                <h5 class="aboutus-content-head">About us</h5>
-                <h3 class="aboutus-content-info">
-                    Merging world-class intelligence analysis with cutting <br> edge AI, we are building the world’s largest and most <br> comprehensive cross-platform “Database of Evil”.
-                </h3>
-            </div>
+      <header class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="./assets/images/about_logo_active.png"
+              class="main-logo"
+              alt="ActiveFence"
+            />
+            <img
+              src="./assets/images/footer_logo.png"
+              class="alt-logo"
+              alt="ActiveFence"
+            />
+          </a>
         </div>
+        <nav class="mkd-navbar">
+          <ul class="mkd-nav-ul">
+            <li class="solution-dropdown customMargin">
+              <a
+                href=""
+                class="sol-drop-btn"
+                role="button"
+                id="dropdownMenuButton1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Solutions <i class="fas fa-chevron-down drop-icon"></i
+              ></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <a class="dropdown-item" href="#">Harmful content detection</a>
+                <a class="dropdown-item" href="fraud_prevention.html"
+                  >Fraud Prevention</a
+                >
+                <a class="dropdown-item" href="#"
+                  >Information Operations Mitigation</a
+                >
+                <a class="dropdown-item" href="#">Public Safety and Security</a>
+              </div>
+            </li>
+            <li class="resource-dropdown customMargin">
+              <a
+                href=""
+                class="res-drop-btn"
+                role="button"
+                id="dropdownMenuButton2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Resources <i class="fas fa-chevron-down drop-icon"></i
+              ></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <a class="dropdown-item" href="insights.html">Insights reports</a>
+                <a class="dropdown-item" href="#">ClearView Chrome Extension</a>
+              </div>
+            </li>
+            <li class="customMargin"><a href="about.html">About</a></li>
+            <li class="customMargin"><a href="careers.html">Careers</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
 
+      <div class="aboutus-content-section mkd-container">
+        <div class="aboutus-content">
+          <h5 class="aboutus-content-head">About us</h5>
+          <h3 class="aboutus-content-info">
+            Merging world-class intelligence analysis with cutting <br />
+            edge AI, we are building the world’s largest and most <br />
+            comprehensive cross-platform “Database of Evil”.
+          </h3>
+        </div>
+      </div>
     </section>
 
     <!-- Mobile side navigation -->
     <section id="mobile-nav">
-        <div class="mobile-nav-wrapper">
-            <i class="fas fa-times close-btn" id="toggler"></i>
-            <div class="mobile-side-nav-menu">
-                <ul class="mobile-nav-menu-list">
-                    <li class="mobile-nav-solution"><a href="#!" >Solutions <i class="fas fa-chevron-down drop-icon"></i></a>
-                        <ul>
-                            <li><a class="dropdown-item" href="#">Harmful content detection</a></li>
-                            <li><a class="dropdown-item" href="fraud_prevention.html">Fraud Prevention</a></li>
-                            <li><a class="dropdown-item" href="#">Information Operations Mitigation</a></li>
-                            <li><a class="dropdown-item" href="#">Public Safety and Security</a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-nav-resource"><a href="#">Resources <i class="fas fa-chevron-down drop-icon"></i></a>
-                        <ul>
-                            <li><a class="dropdown-item" href="#">Insights reports</a></li>
-                            <li><a class="dropdown-item" href="#">ClearView Chrome Extension</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Contact us</a></li>
-                </ul>
-            </div>
-
-            <div class="mobile-nav-prom">
-                <div class="from-insight">
-                    <img src="./assets/images/Post icon.png" alt="post icon">
-                    <span>from our insights</span>
-                    <h3>Moving into the mainstream:
-                        a look inside QAnon’s online behavior. <a href="">Read on</a></h3>
-                </div>
-            </div>
+      <div class="mobile-nav-wrapper">
+        <i class="fas fa-times close-btn" id="toggler"></i>
+        <div class="mobile-side-nav-menu">
+          <ul class="mobile-nav-menu-list">
+            <li class="mobile-nav-solution">
+              <a href="#!"
+                >Solutions <i class="fas fa-chevron-down drop-icon"></i
+              ></a>
+              <ul>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Harmful content detection</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fraud_prevention.html"
+                    >Fraud Prevention</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Information Operations Mitigation</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Public Safety and Security</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav-resource">
+              <a href="#"
+                >Resources <i class="fas fa-chevron-down drop-icon"></i
+              ></a>
+              <ul>
+                <li><a class="dropdown-item" href="insights.html">Insights reports</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >ClearView Chrome Extension</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+          </ul>
         </div>
+
+        <div class="mobile-nav-prom">
+          <div class="from-insight">
+            <img src="./assets/images/Post icon.png" alt="post icon" />
+            <span>from our insights</span>
+            <h3>
+              Moving into the mainstream: a look inside QAnon’s online behavior.
+              <a href="">Read on</a>
+            </h3>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="aboutus-story">
-        <div class="aboutus-story">
-            <div class="row margin-escape">
-                <div class="col-12 col-lg-5 about-story-img">
-                    <img src="./assets/images/IMG About us.png" alt="" class="img-fluid">
-                </div>
-                <div class="col-12 col-lg about-story-content">
-                    <div class="about-story-content-1">
-                        <p>
-                            ActiveFence identifies and tracks malicious activities online, at scale. By scanning—in hidden sources of chatter and across the web—bad actors, the content they share and the networks they operate, <strong> we protect billions of people worldwide from violent extremism, disinformation, child sexual abuse, fraud and other harms on the internet.</strong> We cover thousands of sources in over 20 languages.
-                        </p>
-                    </div>
-
-                    <div class="about-story-content-2">
-                        <h3>Our Story</h3>
-                        <p>ActiveFence was founded to fight evil online and make the internet a safer place. <strong> Our technology was originally built to combat ISIS and other violent extremism online, at scale.</strong> Through our work with some of the world’s largest technology platforms in this area, we realized that our technology could also support growing needs in other abuse areas.</p>
-                        <p>As parents and as concerned citizens, our founders worked to quickly grow the types of areas we cover to include countering terror, human trafficking, child predator activity, disinformation and brand smear campaigns online. </p>
-                        <p>
-                            <strong>Today, we support Fortune 500 technology companies, brands, NGOs, and government agencies in their quest to identify, track, and prevent online evil at scale. </strong> </p>
-                    </div>
-                </div>
+      <div class="aboutus-story">
+        <div class="row margin-escape">
+          <div class="show-on-mob">
+            <p>
+              ActiveFence identifies and tracks malicious activities online, at
+              scale. By scanning—in hidden sources of chatter and across the
+              web—bad actors, the content they share and the networ<span
+                class="three-dots"
+                >...</span
+              ><span class="show-text"
+                >they operate,
+                <strong>
+                  we protect billions of people worldwide from violent
+                  extremism, disinformation, child sexual abuse, fraud and other
+                  harms on the internet.</strong
+                >
+                We cover thousands of sources in over 20 languages.</span
+              >
+            </p>
+            <span class="show-btn">Read more</span>
+          </div>
+          <div class="col-12 col-lg-5 about-story-img">
+            <img src="./assets/images/IMG About us.png" alt="" />
+          </div>
+          <div class="col-12 col-lg about-story-content">
+            <div class="about-story-content-1">
+              <p>
+                ActiveFence identifies and tracks malicious activities online,
+                at scale. By scanning—in hidden sources of chatter and across
+                the web—bad actors, the content they share and the networks they
+                operate,
+                <strong>
+                  we protect billions of people worldwide from violent
+                  extremism, disinformation, child sexual abuse, fraud and other
+                  harms on the internet.</strong
+                >
+                We cover thousands of sources in over 20 languages.
+              </p>
             </div>
+
+            <div class="about-story-content-2">
+              <h3>Our Story</h3>
+              <p>
+                ActiveFence was founded to fight evil online and make the
+                internet a safer place.
+                <strong>
+                  Our technology was originally built to combat ISIS and other
+                  violent extremism online, at scale.</strong
+                >
+                Through<span class="three-dots">...</span
+                ><span class="show-text">
+                  our work with some of the world’s largest technology platforms
+                  in this area, we realized that our technology could also
+                  support growing needs in other abuse areas.</span
+                >
+              </p>
+              <span class="show-text"
+                ><p>
+                  As parents and as concerned citizens, our founders worked to
+                  quickly grow the types of areas we cover to include countering
+                  terror, human trafficking, child predator activity,
+                  disinformation and brand smear campaigns online.
+                </p>
+              </span>
+              <span class="show-text"
+                ><p>
+                  <strong
+                    >Today, we support Fortune 500 technology companies, brands,
+                    NGOs, and government agencies in their quest to identify,
+                    track, and prevent online evil at scale.
+                  </strong>
+                </p>
+              </span>
+              <span class="show-btn">Read more</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="about-leadership">
-        <div class="mkd-container">
-            <div class="row margin-escape leadership">
-                <div class="col-12 col-lg-3 leadership-head">
-                    <h3>Leadership</h3>
+      <div class="mkd-container">
+        <div class="row margin-escape leadership">
+          <div class="col-12 col-lg-3 leadership-head">
+            <h3>Leadership</h3>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="row margin-escape">
+              <div class="col-6 col-lg-4 leaders">
+                <div class="card w-100">
+                  <div id="profile-image-leader-1"></div>
+                  <!-- <img
+                    class="card-img-top"
+                    src="./assets/images/leader1.png"
+                    alt="Card image cap"
+                  /> -->
+                  <div class="card-body">
+                    <h5 class="card-title">Noam Schwartz</h5>
+                    <p class="card-text">
+                      Chief Executive Officer & <br />
+                      Co-Founder
+                    </p>
+
+                    <a
+                      href="https://www.linkedin.com/in/noamsp/"
+                      target="_blank"
+                      class="card-arrow"
+                      ><img src="./assets/images/Diagonal Arrow.png" alt=""
+                    /></a>
+                  </div>
                 </div>
-                <div class="col-12 col-lg-9">
-                    <div class="row margin-escape">
-                        <div class="col-6 col-lg-4 leaders">
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/leader1.png" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Noam Schwartz</h5>
-                                  <p class="card-text">Chief Executive Officer <br> & Co-Founder</p>
-                                   
-                                   <a href="https://www.linkedin.com/in/noamsp/" target="_blank" class="card-arrow"><img src="./assets/images/Diagonal Arrow.png" alt=""></a> 
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-6 col-lg-4 leaders">
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/leader2.png" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Eyal Dykan</h5>
-                                  <p class="card-text">President & Co-Founder</p>
-                                   <a href="https://www.ict.org.il/Worker.aspx?ID=851#gsc.tab=0" target="_blank" class="card-arrow"><img src="./assets/images/Diagonal Arrow.png" alt=""></a> 
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-6 col-lg-4 leaders">
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/leader3.png" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Iftach Orr</h5>
-                                  <p class="card-text">Chief Technology Officer <br> & Co-Founder</p>
-                                   <a href="https://www.linkedin.com/in/iftacho/" target="_blank" class="card-arrow"><img src="./assets/images/Diagonal Arrow.png" alt=""></a> 
-                                </div>
-                              </div>
-                        </div>
+              </div>
+              <div class="col-6 col-lg-4 leaders">
+                <div class="card w-100">
+                  <!-- <img
+                    class="card-img-top"
+                    src="./assets/images/leader2.png"
+                    alt="Card image cap"
+                  /> -->
+                  <div id="profile-image-leader-2"></div>
 
-                        <!-- 2nd row -->
-                        <div class="col-6 col-lg-4 leaders">
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/leader4.png" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Alon Porat</h5>
-                                  <p class="card-text">Chief Product Officer <br> & Co-Founder</p>
-                                   <a href="https://www.linkedin.com/in/alonporat/" target="_blank" class="card-arrow"><img src="./assets/images/Diagonal Arrow.png" alt=""></a> 
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-6 col-lg-4 leaders">
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/leader5.png" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Nitzan Tamari</h5>
-                                  <p class="card-text">Chief Marketing Officer</p>
-                                   <a href="https://www.linkedin.com/in/nitzan-tamari-901b001/" target="_blank" class="card-arrow"><img src="./assets/images/Diagonal Arrow.png" alt=""></a> 
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-6 col-lg-4 leaders">
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/leader6.png" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Assaf Zohar</h5>
-                                  <p class="card-text">Chief Data Officer</p>
-                                   <a href="https://www.linkedin.com/in/assaf-zohar-88888a16/" target="_blank" class="card-arrow"><img src="./assets/images/Diagonal Arrow.png" alt=""></a> 
-                                </div>
-                              </div>
-                        </div>
-
-                        <!-- 3rd row -->
-                        <div class="col-6 col-lg-4 leaders">
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/leader7.png" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Mor Sidi</h5>
-                                  <p class="card-text">Vice President, Operations</p>
-                                   <a href="https://www.linkedin.com/in/morsidi/" target="_blank" class="card-arrow"><img src="./assets/images/Diagonal Arrow.png" alt=""></a> 
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-6 col-lg-4 leaders">
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/leader8.png" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Zohar Cohen</h5>
-                                  <p class="card-text">Vice President, Delivery</p>
-                                   <a href="https://www.linkedin.com/in/czohar/" target="_blank" class="card-arrow"><img src="./assets/images/Diagonal Arrow.png" alt=""></a> 
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-6 col-lg-4 leaders">
-                            <div class="card">
-                                <img class="card-img-top" src="./assets/images/leader9.png" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Tomar Poran</h5>
-                                  <p class="card-text">Vice President, Sales</p>
-                                   <a href="https://www.linkedin.com/in/tomerporan/" target="_blank" class="card-arrow"><img src="./assets/images/Diagonal Arrow.png" alt=""></a> 
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-
-                    
+                  <div class="card-body">
+                    <h5 class="card-title">Eyal Dykan</h5>
+                    <p class="card-text">President & Co-Founder</p>
+                    <a
+                      href="https://www.ict.org.il/Worker.aspx?ID=851#gsc.tab=0"
+                      target="_blank"
+                      class="card-arrow"
+                      ><img src="./assets/images/Diagonal Arrow.png" alt=""
+                    /></a>
+                  </div>
                 </div>
-                
+              </div>
+              <div class="col-6 col-lg-4 leaders">
+                <div class="card w-100">
+                  <!-- <img
+                    class="card-img-top"
+                    src="./assets/images/leader3.png"
+                    alt="Card image cap"
+                  /> -->
+                  <div id="profile-image-leader-3"></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Iftach Orr</h5>
+                    <p class="card-text">
+                      Chief Technology Officer <br />
+                      & Co-Founder
+                    </p>
+                    <a
+                      href="https://www.linkedin.com/in/iftacho/"
+                      target="_blank"
+                      class="card-arrow"
+                      ><img src="./assets/images/Diagonal Arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2nd row -->
+              <div class="col-6 col-lg-4 leaders">
+                <div class="card w-100">
+                  <!-- <img
+                    class="card-img-top"
+                    src="./assets/images/leader4.png"
+                    alt="Card image cap"
+                  /> -->
+                  <div id="profile-image-leader-4"></div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Alon Porat</h5>
+                    <p class="card-text">
+                      Chief Product Officer <br />
+                      & Co-Founder
+                    </p>
+                    <a
+                      href="https://www.linkedin.com/in/alonporat/"
+                      target="_blank"
+                      class="card-arrow"
+                      ><img src="./assets/images/Diagonal Arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 leaders">
+                <div class="card w-100">
+                  <!-- <img
+                    class="card-img-top"
+                    src="./assets/images/leader5.png"
+                    alt="Card image cap"
+                  /> -->
+                  <div id="profile-image-leader-5"></div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Nitzan Tamari</h5>
+                    <p class="card-text">Chief Marketing Officer</p>
+                    <a
+                      href="https://www.linkedin.com/in/nitzan-tamari-901b001/"
+                      target="_blank"
+                      class="card-arrow"
+                      ><img src="./assets/images/Diagonal Arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 leaders">
+                <div class="card w-100">
+                  <!-- <img
+                    class="card-img-top"
+                    src="./assets/images/leader6.png"
+                    alt="Card image cap"
+                  /> -->
+                  <div id="profile-image-leader-6"></div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Assaf Zohar</h5>
+                    <p class="card-text">Chief Data Officer</p>
+                    <a
+                      href="https://www.linkedin.com/in/assaf-zohar-88888a16/"
+                      target="_blank"
+                      class="card-arrow"
+                      ><img src="./assets/images/Diagonal Arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3rd row -->
+              <div class="col-6 col-lg-4 leaders">
+                <div class="card w-100">
+                  <!-- <img
+                    class="card-img-top"
+                    src="./assets/images/leader7.png"
+                    alt="Card image cap"
+                  /> -->
+                  <div id="profile-image-leader-7"></div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Mor Sidi</h5>
+                    <p class="card-text">Vice President, Operations</p>
+                    <a
+                      href="https://www.linkedin.com/in/morsidi/"
+                      target="_blank"
+                      class="card-arrow"
+                      ><img src="./assets/images/Diagonal Arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 leaders">
+                <div class="card w-100">
+                  <!-- <img
+                    class="card-img-top"
+                    src="./assets/images/leader8.png"
+                    alt="Card image cap"
+                  /> -->
+                  <div id="profile-image-leader-8"></div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Zohar Cohen</h5>
+                    <p class="card-text">Vice President, Delivery</p>
+                    <a
+                      href="https://www.linkedin.com/in/czohar/"
+                      target="_blank"
+                      class="card-arrow"
+                      ><img src="./assets/images/Diagonal Arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 leaders">
+                <div class="card w-100">
+                  <!-- <img
+                    class="card-img-top"
+                    src="./assets/images/leader9.png"
+                    alt="Card image cap"
+                  /> -->
+                  <div id="profile-image-leader-9"></div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Tomar Poran</h5>
+                    <p class="card-text">Vice President, Sales</p>
+                    <a
+                      href="https://www.linkedin.com/in/tomerporan/"
+                      target="_blank"
+                      class="card-arrow"
+                      ><img src="./assets/images/Diagonal Arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="about-investors">
-        <div class="mkd-container">
-            <div class="investors-section">
-                <div class="investor-head">
-                    <h3>Investors</h3>
-                </div>
-                <div class="investors-brand">
-                    <div class="row margin-escape ">
-                        <div class="col-4 investor-brand-1">
-                            <img src="./assets/images/Norwest Venture Partners logo.png"  alt="Norwest">
-                        </div>
-                        <div class="col-4 investor-brand-1">
-                            <img src="./assets/images/Grove Ventures logo.png" alt="Grove Ventures">
-                        </div>
-                        <div class="col-4 investor-brand-1">
-                            <img src="./assets/images/Resolute Ventures logo.png" alt="Resolute Venture">
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="mobile-invest-swipe">
-                    <div id="investor-carousel" class="carousel investor-carousel slide" data-interval="false" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active investor-item">
-                                <img src="./assets/images/Norwest Venture Partners logo.png" alt="">
-                            </div>
-                            <div class="carousel-item investor-item">
-                                <img src="./assets/images/Grove Ventures logo.png" alt="">
-                            </div>
-                            <div class="carousel-item investor-item">
-                                <img src="./assets/images/Resolute Ventures logo.png" alt="">
-                            </div>
-                        </div>
-                        <ol class="carousel-indicators">
-                            <li data-target="#investor-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#investor-carousel" data-slide-to="1"></li>
-                            <li data-target="#investor-carousel" data-slide-to="2"></li>
-                        </ol>
-                    </div>
-                </div>
+      <div class="mkd-container">
+        <div class="investors-section">
+          <div class="investor-head">
+            <h3>Investors</h3>
+          </div>
+          <div class="investors-brand">
+            <div class="row margin-escape">
+              <div class="col-4 investor-brand-1">
+                <img
+                  src="./assets/images/Norwest Venture Partners logo.png"
+                  alt="Norwest"
+                />
+              </div>
+              <div class="col-4 investor-brand-1">
+                <img
+                  src="./assets/images/Grove Ventures logo.png"
+                  alt="Grove Ventures"
+                />
+              </div>
+              <div class="col-4 investor-brand-1">
+                <img
+                  src="./assets/images/Resolute Ventures logo.png"
+                  alt="Resolute Venture"
+                />
+              </div>
             </div>
+          </div>
+          <div class="mobile-invest-swipe">
+            <div
+              id="investor-carousel"
+              class="carousel investor-carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active investor-item">
+                  <img
+                    src="./assets/images/Norwest Venture Partners logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item investor-item">
+                  <img src="./assets/images/Grove Ventures logo.png" alt="" />
+                </div>
+                <div class="carousel-item investor-item">
+                  <img
+                    src="./assets/images/Resolute Ventures logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#investor-carousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#investor-carousel" data-slide-to="1"></li>
+                <li data-target="#investor-carousel" data-slide-to="2"></li>
+              </ol>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="about-challenge">
-        <div class="about-challenge-wrapper">
-            <div class="row margin-escape">
-                <div class="col-12 col-md-6 col-lg-6 challenge-img">
-                    <img src="./assets/images/IMG Join us.png" alt="Join Us" class="img-fluid">
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 challenge-joinus d-flex align-items-center">
-                    <div class="join-us-section">
-                        <h5>Ready for a challenge?</h5>
-                        <h3>We’re on the lookout for the best talent to help us work on some of the most pressing problems of the digital age.</h3>
-                        <a href="" class="btn join-us-btn">Join the team <img src="./assets/images/Open Arrow.png" alt="arrow"></a>
-                    </div>
-                    
-                </div>
+      <div class="about-challenge-wrapper">
+        <div class="row margin-escape">
+          <div class="col-12 col-md-6 col-lg-6 challenge-img">
+            <img
+              src="./assets/images/IMG Join us.png"
+              alt="Join Us"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-6 challenge-joinus d-flex align-items-center"
+          >
+            <div class="join-us-section">
+              <h5>Ready for a challenge?</h5>
+              <h3>
+                We’re on the lookout for the best talent to help us work on some
+                of the most pressing problems of the digital age.
+              </h3>
+              <a href="" class="btn join-us-btn"
+                >Join the team
+                <img src="./assets/images/Open Arrow.png" alt="arrow"
+              /></a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="footer">
-        <div class="mkd-container">
-            <div class="footer-contents">
-                <div class="row margin-escape">
-                    <div class="col-12 col-lg-3 footer-links">
-                        <div class="footer-logo-img">
-                            <img src="./assets/images/footer_logo.png" alt="Active Fence">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 footer-links">
-                        <ul class="footer-links-2">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Solutions</a></li>
-                            <ul >
-                                <li><a href="">Harmful Content Detection</a></li>
-                                <li><a href="">Fraud Detection</a></li>
-                                <li><a href="">Information Operations Mitigation</a></li>
-                                <li><a href="">Public Safety and Security</a></li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-3 footer-links">
-                        <ul class="footer-links-2">
-                            <li><a href="">Resources</a></li>
-                            <ul >
-                                <li><a href="">Insights reports</a></li>
-                                <li><a href="">CleanView Chrome extension</a></li>
-                            </ul>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Contact us</a></li>
-                            <li><a href="">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-3 footer-social">
-                       <ul class="footer-social-icons footer-links-2 ">
-                           <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                       </ul>
-                    </div>
-                </div>
+      <div class="mkd-container">
+        <div class="footer-contents">
+          <div class="row margin-escape">
+            <div class="col-12 col-lg-3 footer-links">
+              <div class="footer-logo-img">
+                <img src="./assets/images/footer_logo.png" alt="Active Fence" />
+              </div>
             </div>
+            <div class="col-12 col-lg-3 footer-links">
+              <ul class="footer-links-2">
+                <li><a href="">Home</a></li>
+                <li><a href="">Solutions</a></li>
+                <ul>
+                  <li><a href="">Harmful Content Detection</a></li>
+                  <li><a href="">Fraud Detection</a></li>
+                  <li><a href="">Information Operations Mitigation</a></li>
+                  <li><a href="">Public Safety and Security</a></li>
+                </ul>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3 footer-links">
+              <ul class="footer-links-2">
+                <li><a href="">Resources</a></li>
+                <ul>
+                  <li><a href="">Insights reports</a></li>
+                  <li><a href="">CleanView Chrome extension</a></li>
+                </ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Careers</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3 footer-social">
+              <ul class="footer-social-icons footer-links-2">
+                <li>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="footer-copyright" class="about-footer-copyright">
-        <div class="mkd-container">
-            <div class="copyright-link-contents">
-                <div class="copyright-content">
-                    &copy;2021 ActiveFence. All rights reserved.
-                </div>
-                <div class="copyright-links">
-                    <ul>
-                        <li><a href="">Terms</a></li>
-                        <li><a href="">Privacy</a></li>
-                        <li><a href="">Cookies</a></li>
-                    </ul>
-                </div>
-                <a href="#hero" class="scroll-top-btn"><i class="fas fa-long-arrow-alt-up"></i></a>
-            </div>
+      <div class="mkd-container">
+        <div class="copyright-link-contents">
+          <div class="copyright-content">
+            &copy;2021 ActiveFence. All rights reserved.
+          </div>
+          <div class="copyright-links">
+            <ul>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Cookies</a></li>
+            </ul>
+          </div>
+          <a href="#hero" class="scroll-top-btn"
+            ><i class="fas fa-long-arrow-alt-up"></i
+          ></a>
         </div>
+      </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-     <!-- Bootstrap Bundle with Popper --> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
     <!-- main js -->
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
